@@ -5,33 +5,33 @@
 // который будет выводить текущий курс студента (от 1 до 5). Курс вычисляется так: нужно от текущего года отнять год поступления в вуз. 
 // Текущий год получите самостоятельно.
 
-// class User {    
-//     constructor(name,surname,year) {
-//         this.name = name;
-//         this.surname = surname;
-//         this.year = year;
-//     }
+class User {    
+    constructor(name,surname,year) {
+        this.name = name;
+        this.surname = surname;
+        this.year = year;
+    }
 
-//     getFullName() {
-//         return 'Полное имя: ' + this.name + ' ' + this.surname;
-//     }
+    getFullName() {
+        return 'Полное имя: ' + this.name + ' ' + this.surname;
+    }
 
-//     getCourse() {
-//         var date = new Date
-//         return 'Курс: ' + (date.getFullYear() - this.year)
-//     }
+    getCourse() {
+        var date = new Date
+        return 'Курс: ' + (date.getFullYear() - this.year)
+    }
 
-// }
+}
 
-// class Student extends User {
-//     // super()
+class Student extends User {
+    // super()
 
-// }
+}
 
-// var student = new Student('Иван', 'Иванов', 2018);
+var student = new Student('Иван', 'Иванов', 2018);
 
 
-// console.log(student.getFullName());
-// console.log(student.getCourse());
+console.log(student.getFullName());
+console.log(student.getCourse());
 
 
